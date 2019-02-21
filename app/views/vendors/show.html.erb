@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vendors:</strong>
+  <%= @vendor.vendors %>
+</p>
+<p>
+  <strong>Products:</strong>
+  <%= @vendor.products.all? >
+</p>
+
+<%= link_to 'Edit', edit_vendor_path(@vendor) %> |
+<%= link_to 'Back', vendors_path %>
